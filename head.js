@@ -7,9 +7,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function head(){
-  for (let i = 0; i < 0; i++){
-    return i[0]
+function head() {
+  for (let i = 0; i < 0; i++) {
+    return i[0];
   }
 }
 assertEqual(head([5,6,7]), 5);
