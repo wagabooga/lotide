@@ -8,10 +8,16 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
+// findkey function takes two inputs, object and callback
 function findKey(object,cb){
+  // cycle through the keys of {object (line 24)} 
   for (let key of Object.keys(object)) {
-    console.log(key)
+    //  callback (check x.stars 2)  on {object}at [key of "" ]
+
+
+
+
+
     if (cb(object[key]) === true) {
       return key
     }
@@ -21,7 +27,11 @@ function findKey(object,cb){
 
 //testcase
 
+// assert equal (actual, expected)
+// actual = findKey(Obj(objkey)) 
+// expected nooma
 assertEqual(findKey({
+
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
   "noma":      { stars: 2 },
